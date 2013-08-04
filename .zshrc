@@ -5,7 +5,9 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+#ZSH_THEME="robbyrussell"
 ZSH_THEME="miloshadzic"
+
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -29,11 +31,29 @@ ZSH_THEME="miloshadzic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git osx)
+
+
+
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/MacGPG2/bin:~/.bin/
 
-alias subl='nocorrect subl'
+# Customize to your needs...
+export PATH=/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/MacGPG2/bin:$HOME/.rvm/scripts/rvm
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/usr/local/sbin #adding sbin to path
+
+
+#alias
+alias gr=gradle
+alias squildvnp='sshuttle -r aws 192.168.55.0/24'
+eval "$(rbenv init -)"
+
+
+# TMUX
+alias tm='if which tmux 2>&1 >/dev/null; then test -z "$TMUX" && (tmux attach || tmux new-session) fi'
+
+
+
