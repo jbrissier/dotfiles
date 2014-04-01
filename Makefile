@@ -6,6 +6,8 @@ install-vim:
 	ln -s `pwd`/.vimrc ~/.vimrc
 
 install-zsh:
+	rm -f ~/.zsh
+	ln -s ´pwd/.zsh ´~/.zs
 	rm -f ~/.zshrc
 	ln -s `pwd`/.zshrc ~/.zshrc
 
