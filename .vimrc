@@ -26,6 +26,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+color solarized
+
+
 " auto reload vimrc
 augroup myvimrchooks
 au!
