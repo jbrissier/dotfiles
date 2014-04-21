@@ -53,5 +53,7 @@ alias gr=gradle
 # TMUX
 alias tm='if which tmux 2>&1 >/dev/null; then test -z "$TMUX" -u && (tmux -u attach || tmux -u new-session) fi'
 
-
+# export utf stuff 
+export LC_ALL=de_US.utf-8 
+export LANG="$LC_ALL" 
 
