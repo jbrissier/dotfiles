@@ -78,3 +78,5 @@ let g:pymode_folding = 0
 " Ignore useless pep8 rules
 let g:pymode_lint_ignore="E501,W391"
 
+" fixing backspace
+:set bs=2
