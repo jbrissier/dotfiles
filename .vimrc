@@ -12,11 +12,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Python-mode-klen'
 Bundle 'ctrlp.vim'
-
+Bundle 'plasticboy/vim-markdown'
 Bundle 'davidhalter/jedi-vim'
-"Bundle 'scrooloose/nerdtree'
-
-":Bundle 'nerdtree-ack'
 
 "basic stuff 
 syntax on
