@@ -51,7 +51,7 @@ alias gr=gradle
 
 
 # TMUX
-alias tm='if which tmux 2>&1 >/dev/null; then test -z "$TMUX" -u && (tmux -u attach || tmux -u new-session) fi'
+alias tm='(tmux ls | grep -vq attached && tmux at) || tmux'
 
 export TERM="xterm-256color"
 
