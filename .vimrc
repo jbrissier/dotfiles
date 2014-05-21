@@ -76,7 +76,12 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 let g:pymode_folding = 0
 
 " Ignore useless pep8 rules
-let g:pymode_lint_ignore="E501,W391"
+let g:pymode_lint_ignore="E501,W391,C0301"
 
 " fixing backspace
 :set bs=2
+
+" use mouse 
+:set mouse=a
+"clipborad osx 
+set clipboard+=unnamed
