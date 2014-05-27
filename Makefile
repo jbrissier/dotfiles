@@ -5,9 +5,14 @@ install-vim:
 	ln -s `pwd`/.vim/colors/solarized.vim ~/.vim/colors/solarized.vim
 	ln -s `pwd`/.vimrc ~/.vimrc
 
+install-tmux:
+	rm -r ~/.tmux.conf
+	ln -s `pwd`/.tmux.con ~/.tmux.conf
+
+
 install-zsh:
 	rm -f ~/.zshrc
 	ln -s `pwd`/.zshrc ~/.zshrc
 
 
-install-all: install-vim install-zsh
+install-all: install-vim install-zsh install-tmux
