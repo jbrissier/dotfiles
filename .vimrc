@@ -86,3 +86,9 @@ let g:pymode_lint_ignore="E501,W391,C0301"
 :set mouse=a
 "clipborad osx 
 set clipboard+=unnamed
+
+
+" save on esc esc
+map <Esc><Esc> :w<CR>
+
+
