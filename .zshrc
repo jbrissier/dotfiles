@@ -51,9 +51,10 @@ alias gr=gradle
 
 
 # TMUX
-alias tm='(tmux ls | grep -vq attached && tmux at) || tmux'
+alias tm='(tmux ls | grep -vq attached && tmux uat) || tmux -u'
 
 export TERM="xterm-256color"
 
 alias jsonp="python -mjson.tool"
-
+alias passgen="</dev/urandom tr -dc '12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB' | head -c10; echo \"\""
+alias it="echo '$(date "+%Y-%m-%d %H:%M:%S") - $1' >> ~/Desktop/interruppt.$(date +%Y-%m-%d).log"
