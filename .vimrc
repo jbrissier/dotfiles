@@ -3,20 +3,27 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " let Vundle manage Vundle
 " required! 
 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle'
 Bundle 'Python-mode-klen'
 Bundle 'ctrlp.vim'
 "Bundle 'plasticboy/vim-markdown'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'tpope/vim-fugitive'
+Bundle 'ervandew/supertab'
 ":Bundle 'nerdtree-ack'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
 
 "basic stuff 
 syntax on
@@ -46,6 +53,9 @@ let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <C-n> :NERDTreeToggle<CR>
 
 
+" cache ctrl.p stuff
+let g:ctrlp_cache_dir = '~/.cache/ctrlp'
+let g:ctrlp_clear_cache_on_exit=0
 " python stuff 
 let g:pymode_rope = 0 
 
@@ -55,6 +65,8 @@ let g:pymode_doc_key = 'K'
 "
 " "Linting
 let g:pymode_lint = 1
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_onfly = 0
 let g:pymode_lint_checker = "pyflakes,pep8"
 " Auto check on save
 let g:pymode_lint_write = 1
@@ -87,10 +99,9 @@ let g:pymode_lint_ignore="E501,W391,C0301"
 "clipborad osx 
 set clipboard+=unnamed
 
-
+:let mapleader = ","
 " save on esc esc
 map <Esc><Esc> :w<CR>
-
 
 " Mappings {{{
 "   " Unbind the cursor keys in insert, normal and visual modes.
