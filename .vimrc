@@ -8,17 +8,17 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required! 
 
-Bundle 'gmarik/Vundle'
-Bundle 'Python-mode-klen'
-Bundle 'ctrlp.vim'
-"Bundle 'plasticboy/vim-markdown'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'chase/vim-ansible-yaml'
-Bundle 'tpope/vim-fugitive'
-Bundle 'ervandew/supertab'
-Bundle 'fatih/vim-go'
-":Bundle 'nerdtree-ack'
+Plugin 'gmarik/Vundle'
+Plugin 'Python-mode-klen'
+Plugin 'ctrlp.vim'
+"Plugin 'plasticboy/vim-markdown'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'tpope/vim-fugitive'
+Plugin 'ervandew/supertab'
+Plugin 'fatih/vim-go'
+":Plugin 'nerdtree-ack'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
