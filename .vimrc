@@ -17,6 +17,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'tpope/vim-fugitive'
 Bundle 'ervandew/supertab'
+Bundle 'fatih/vim-go'
 ":Bundle 'nerdtree-ack'
 
 " All of your Plugins must be added before the following line
