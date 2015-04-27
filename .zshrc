@@ -58,7 +58,7 @@ export TERM="xterm-256color"
 alias jsonp="python -mjson.tool"
 alias passgen="</dev/urandom tr -dc '12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB' | head -c10; echo \"\""
 alias it="echo '$(date "+%Y-%m-%d %H:%M:%S") - $1' >> ~/Desktop/interruppt.$(date +%Y-%m-%d).log"
-
+alias gi="git add -i"
 # adding boot2docker export
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/jochenbrissier/.boot2docker/certs/boot2docker-vm
