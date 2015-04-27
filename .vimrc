@@ -103,11 +103,3 @@ set clipboard+=unnamed
 :let mapleader = ","
 " save on esc esc
 map <Esc><Esc> :w<CR>
-
-" Mappings {{{
-"   " Unbind the cursor keys in insert, normal and visual modes.
-       for prefix in ['i', 'n', 'v']
-          for key in ['<Up>', '<Down>', '<Left>', '<Right>']
-              exe prefix . "noremap " . key . " <Nop>"
-               endfor
-          endfor
