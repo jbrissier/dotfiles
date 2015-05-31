@@ -34,6 +34,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set relativenumber
 
 color solarized
 
@@ -98,6 +99,7 @@ let g:pymode_lint_ignore="E501,W391,C0301"
 
 " use mouse 
 :set mouse=a
+
 "clipborad osx 
 set clipboard+=unnamed
 
@@ -105,3 +107,9 @@ set clipboard+=unnamed
 " save on esc esc
 map <Esc><Esc> :w<CR>
 :set ic
+
+" window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
