@@ -46,7 +46,7 @@ export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Py
 PATH=$PATH:/usr/local/sbin #adding sbin to path
 
 # add dotfile bin
-PATH=~/bin:$PATH
+PATH=~/dotfiles/bin:$PATH
 
 #alias
 alias gr=gradle
