@@ -45,13 +45,14 @@ export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Py
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/usr/local/sbin #adding sbin to path
 
+# add dotfile bin
+PATH=~/bin:$PATH
 
 #alias
 alias gr=gradle
 
 
 # TMUX
-alias tm='(tmux ls | grep -vq attached && tmux uat) || tmux -u'
 
 export TERM="xterm-256color"
 
