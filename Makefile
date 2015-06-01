@@ -7,12 +7,12 @@ install-vim:
 
 install-tmux:
 	rm -r ~/.tmux.conf
-	ln -s `pwd`/.tmux.conf ~/.tmux.conf
+	ln -s `pwd`/tmux.conf ~/.tmux.conf
 
 
 install-zsh:
 	rm -f ~/.zshrc
-	ln -s `pwd`/.zshrc ~/.zshrc
+	ln -s `pwd`/zshrc ~/.zshrc
 
 
 install-all: install-vim install-zsh install-tmux
