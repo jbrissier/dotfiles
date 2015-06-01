@@ -3,7 +3,7 @@ install-vim:
 	mkdir -p ~/.vim/colors
 	rm -f ~/.vim/colors/solarized.vim
 	ln -s `pwd`/.vim/colors/solarized.vim ~/.vim/colors/solarized.vim
-	ln -s `pwd`/.vimrc ~/.vimrc
+	ln -s `pwd`/vimrc ~/.vimrc
 
 install-tmux:
 	rm -r ~/.tmux.conf
