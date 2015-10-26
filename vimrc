@@ -19,6 +19,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'fatih/vim-go'
 Plugin 'vim-airline'
+Plugin 'keith/parsec.vim'
+Plugin 'ingydotnet/yaml-vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-surround'
 ":Plugin 'nerdtree-ack'
 
 " All of your Plugins must be added before the following line
