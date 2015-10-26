@@ -53,7 +53,7 @@ augroup END
 set encoding=utf-8
 
 "ignore stuff in ctrlp
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*/node_modules/*,*/site-packages/*
 
 "NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
