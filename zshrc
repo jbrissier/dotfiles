@@ -40,7 +40,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/MacGPG2/bin:$HOME/.rvm/scripts/rvm:/usr/local/share/npm/bin
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/MacGPG2/bin:$HOME/.rvm/scripts/rvm:/usr/local/share/npm/bin
 
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/usr/local/sbin #adding sbin to path
@@ -62,6 +62,14 @@ alias it="echo '$(date "+%Y-%m-%d %H:%M:%S") - $1' >> ~/Desktop/interruppt.$(dat
 alias gi="git add -i"
 alias dm="docker-machine"
 alias dc="docker-compose"
+export LANG="de_DE.UTF-8"  
+export LC_COLLATE="de_DE.UTF-8"  
+export LC_CTYPE="de_DE.UTF-8"  
+export LC_MESSAGES="de_DE.UTF-8"  
+export LC_MONETARY="de_DE.UTF-8"  
+export LC_NUMERIC="de_DE.UTF-8"  
+export LC_TIME="de_DE.UTF-8"  
+export LC_ALL=  
 # adding boot2docker export
 #export DOCKER_HOST=tcp://192.168.59.103:2376
 #export DOCKER_CERT_PATH=/Users/jochenbrissier/.boot2docker/certs/boot2docker-vm

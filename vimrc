@@ -7,12 +7,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle
 " required! 
-
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'gmarik/Vundle'
 Plugin 'Python-mode-klen'
 Plugin 'ctrlp.vim'
 "Plugin 'plasticboy/vim-markdown'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'tpope/vim-fugitive'
@@ -23,6 +23,26 @@ Plugin 'keith/parsec.vim'
 Plugin 'ingydotnet/yaml-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-surround'
+Plugin 'mattn/emmet-vim'
+
+
+Plugin 'Distinguished'
+
+" Javascript
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Valloric/YouCompleteMe'
+
+
+" These are the tweaks I apply to YCM's config, you don't need them but they
+" might help.
+" " YCM gives you popups and splits by default that some people might not
+" like, so these should tidy it up a bit for you.
+"let g:ycm_add_preview_to_completeopt=0
+"let g:ycm_confirm_extra_conf=0
+"set completeopt-=preview
+
 ":Plugin 'nerdtree-ack'
 
 " All of your Plugins must be added before the following line
@@ -40,7 +60,9 @@ set shiftwidth=4
 set expandtab
 set relativenumber
 
-color solarized
+set t_Co=256
+set background=dark
+colorscheme solarized
 
 
 " auto reload vimrc
