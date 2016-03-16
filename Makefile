@@ -1,4 +1,5 @@
 install-vim:
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	rm -f ~/.vimrc
 	mkdir -p ~/.vim/colors
 	rm -f ~/.vim/colors/solarized.vim
@@ -13,6 +14,9 @@ install-tmux:
 install-zsh:
 	rm -f ~/.zshrc
 	ln -s `pwd`/zshrc ~/.zshrc
+
+
+
 
 
 install-all: install-vim install-zsh install-tmux
