@@ -24,6 +24,7 @@ Plugin 'ingydotnet/yaml-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
+Plugin 'Yggdroot/indentLine'
 
 
 Plugin 'Distinguished'
@@ -143,3 +144,4 @@ nnoremap <C-H> <C-W><C-H>
 " ctags renaming
 nnoremap ü <C-]>
 nnoremap Ü <C-O>
+let g:indentLine_char = '|'
