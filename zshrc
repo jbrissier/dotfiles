@@ -50,7 +50,7 @@ PATH=~/dotfiles/bin:$PATH
 
 #alias
 alias gr=gradle
-
+alias vi=vim
 
 # TMUX
 
