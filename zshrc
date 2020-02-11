@@ -40,7 +40,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/MacGPG2/bin:$HOME/.rvm/scripts/rvm:/usr/local/share/npm/bin
 
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/usr/local/sbin #adding sbin to path
@@ -75,3 +74,22 @@ export LC_ALL=
 #export DOCKER_CERT_PATH=/Users/jochenbrissier/.boot2docker/certs/boot2docker-vm
 #export DOCKER_TLS_VERIFY=1
 #eval "$(docker-machine env dev)"
+#
+# pyenv foo
+export PATH="$PATH:$(pyenv root)/shims"
+eval "$(pyenv init -)"
+
+alias wt="watson"
+alias wts="watson start"
+alias pes="pipenv shell"
+
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+
+alias cat="bat"
+
+
+export PATH="/usr/local/opt/node@10/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type f'

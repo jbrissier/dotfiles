@@ -33,7 +33,7 @@ Plugin 'Distinguished'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 
 " These are the tweaks I apply to YCM's config, you don't need them but they
