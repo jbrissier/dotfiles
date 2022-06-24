@@ -49,7 +49,7 @@ PATH=~/dotfiles/bin:$PATH
 
 #alias
 alias gr=gradle
-alias vi=vim
+alias vi=nvim
 
 # TMUX
 
@@ -76,15 +76,14 @@ export LC_ALL=
 #eval "$(docker-machine env dev)"
 #
 # pyenv foo
-export PATH="$PATH:$(pyenv root)/shims"
-eval "$(pyenv init -)"
 
 alias wt="watson"
 alias wts="watson start"
 alias pes="pipenv shell"
-
+alias lg="lazygit"
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias ,,="!!:-1"
 
 alias cat="bat"
 
@@ -93,3 +92,29 @@ export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
+export KUBE_EDITOR='nvim'
+export ANSIBLE_NOCOWS=1
+
+export PATH="$PATH:/Users/jochen/bin/:/Users/jochen/.composer/vendor/bin"
+
+export PATH="/usr/local/opt/helm@2/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+# Load pyenv into the shell by adding
+# the following to ~/.zshrc:
+
+eval "$(pyenv init -)"
+
+export GOPATH=$HOME/dev/golang/
+export KUBECONFIG=$HOME/.kube/main:$HOME/.kube/test
+
+eval $(thefuck --alias)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jochen/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jochen/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jochen/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jochen/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
