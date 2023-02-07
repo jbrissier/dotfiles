@@ -47,6 +47,10 @@ PATH=$PATH:/usr/local/sbin #adding sbin to path
 # add dotfile bin
 PATH=~/dotfiles/bin:$PATH
 
+
+
+PROMPT='%{$fg[cyan]%}%1~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}$(git_prompt_info)%{$fg[cyan]%}❯%{$reset_color%} '
+
 #alias
 alias gr=gradle
 alias vi=nvim
@@ -84,9 +88,10 @@ alias lg="lazygit"
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias ,,="!!:-1"
+alias gtv='git tag $(get-next-version)'
 
 alias cat="bat"
-
+alias py="python"
 
 export PATH="/usr/local/opt/node@10/bin:$PATH"
 
@@ -108,6 +113,7 @@ eval "$(pyenv init --path)"
 
 eval "$(pyenv init -)"
 
+
 export GOPATH=$HOME/dev/golang/
 export KUBECONFIG=$HOME/.kube/main:$HOME/.kube/test
 
@@ -118,3 +124,4 @@ if [ -f '/Users/jochen/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/User
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jochen/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jochen/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/opt/openssl@3/bin:$PATH"
